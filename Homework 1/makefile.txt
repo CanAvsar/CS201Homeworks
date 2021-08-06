@@ -1,0 +1,14 @@
+MovieBookingSystem: Movie.o Reservation.o MovieBookingSystem.o main.o
+	g++ Movie.o Reservation.o MovieBookingSystem.o main.o -o MovieBookingSystem
+
+Movie.o : Movie.cpp
+	g++ -c Movie.cpp
+
+Reservation.o : Reservation.cpp
+	g++ -c Reservation.cpp
+
+ReservationSystem.o : ReservationSystem.cpp
+	g++ -c ReservationSystem.cpp
+
+main.o : main.cpp
+	g++ -c main.cpp
